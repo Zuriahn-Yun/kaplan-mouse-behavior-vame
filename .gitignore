@@ -58,3 +58,6 @@ __pycache__/
 
 # Claude internal
 .claude/
+
+# Local-only scripts (contain personal info)
+upload_to_cluster.sh
