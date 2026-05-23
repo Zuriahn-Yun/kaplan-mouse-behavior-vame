@@ -1,0 +1,131 @@
+vame_version: 0.12.0
+project_name: Open-Field-Test
+project_path: C:\Users\zuria\Kaplan\Vame\Open-Field-Test
+creation_datetime: '2026-02-21T02:55:30+00:00'
+session_names:
+- Subject 1 - JS1 - CBD- OFT_DLC
+- Subject 2 - JS2 - CBD- OFT_DLC
+- Subject 3 - JS3 - CBD - OFT_DLC
+- Subject 4 - JS4 - CBD - OFT_DLC
+- Subject 5 - JS5 - CBD - OFT_DLC
+- Subject 2 - female GO Vehicle OFT_DLC
+- Subject 3 - female GO - Vehicle OFT_DLC
+- Subject 4 - female GO - Vehicle OFT_DLC
+- Subject 5 - female GO - Vehicle OFT_DLC
+- Female 1- CBD- EB4- 4-16-21_DLC
+- Female 2- CBD- EB5- 4-16-21_DLC
+- Subject 1-CBD-EB1-4-19-21_DLC
+- Subject 2-CBD-EB2-4-19-21_DLC
+- Subject 3-CBD-EB3-4-19-21_DLC
+- Subject 1-P14 vehicle-EZ1-8-3-2021_DLC
+- Subject 2-P14 vehicle-EZ2-8-3-2021_DLC
+- Subject 3-P14 vehicle-EZ3-8-3-2021_DLC
+- Subject 4-P14 vehicle-EZ4-8-3-2021_DLC
+- Subject 5-P14 vehicle-EZ5-8-3-21_DLC
+- Subject 6-P14 vehicle-EZ6-8-3-2021_DLC
+- Subject 7-P14 vehicle-EZ7-8-3-2021_DLC
+- Subject 1-P28 vehicle-FV1-10-23-21_DLC
+- Subject 2-P28 vehicle-FV2-10-23-21_DLC
+- Subject 3-P28 vehicle-FV3-10-23-21_DLC
+- Subject 4-P28 vehicle-FV4-10-23-21_DLC
+- Subject 5-P28 vehicle-FV5-10-23-21_DLC
+- Subject 6-P28 vehicle-FV6-10-23-21_DLC
+- Subject 7-P28 vehicle-FV7-10-23-21_DLC
+- Subject 8-P28 vehicle-FV8-10-23-21_DLC
+- Subject 9-P28 vehicle-FV9-10-23-21_DLC
+- Female 3- CBD- DN1-02-19-21_DLC
+- Female 4- CBD - DN2-02-19-21_DLC
+- Female 5-CBD-DN3-02-19-21_DLC
+- Female 6-CBD-DN4-02-19-21_DLC
+- Female7-CBD-DN5-02-19-21_DLC
+- Female8- CBD- DN6-02-19-21_DLC
+- Male 1-CBD-DN1-2-19-21_DLC
+- Male 2-CBD-DN-2-19-21_DLC
+project_random_state: 42
+all_data: true
+keypoints:
+- nose
+- left_ear
+- right_ear
+- left_ear_tip
+- right_ear_tip
+- left_eye
+- right_eye
+- neck
+- mid_back
+- mouse_center
+- mid_backend
+- mid_backend2
+- mid_backend3
+- tail_base
+- tail1
+- tail2
+- tail3
+- tail4
+- tail5
+- left_shoulder
+- left_midside
+- left_hip
+- right_shoulder
+- right_midside
+- right_hip
+- tail_end
+- head_midpoint
+egocentric_data: false
+pose_confidence: 0.6
+robust: true
+iqr_factor: 4
+savgol_filter: true
+savgol_length: 5
+savgol_order: 2
+test_fraction: 0.1
+model_name: VAME_5pt
+pretrained_model: VAME_5pt
+pretrained_weights: true
+num_features: 5
+batch_size: 256
+max_epochs: 500
+model_snapshot: 50
+model_convergence: 150
+transition_function: GRU
+beta: 0.1
+beta_norm: true
+zdims: 4
+learning_rate: 0.0010196967939171493
+time_window: 30
+prediction_decoder: 1
+prediction_steps: 6
+noise: false
+scheduler: 1
+scheduler_step_size: 100
+scheduler_gamma: 0.2
+scheduler_threshold: null
+softplus: false
+n_clusters: 4
+segmentation_algorithms:
+- hmm
+hmm_trained: false
+hmm_n_iter: 100
+individual_segmentation: false
+n_init_kmeans: 15
+length_of_motif_video: 1000
+min_dist: 0.1
+n_neighbors: 200
+num_points: 30000
+hidden_size_layer_1: 256
+hidden_size_layer_2: 256
+dropout_encoder: 0.27656227050693505
+hidden_size_rec: 256
+dropout_rec: 0.27656227050693505
+n_layers: 1
+hidden_size_pred: 256
+dropout_pred: 0.27656227050693505
+mse_reconstruction_reduction: mean
+mse_prediction_reduction: mean
+kmeans_loss: 30
+kmeans_lambda: 0.1
+anneal_function: linear
+kl_start: 6
+annealtime: 100
+paths_to_pose_nwb_series_data: null
+pose_estimation_filetype: h5

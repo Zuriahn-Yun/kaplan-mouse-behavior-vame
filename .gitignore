@@ -1,0 +1,60 @@
+# Videos
+*.mp4
+*.avi
+*.mov
+
+# DLC raw pose files
+*.h5
+
+# VAME processed / training data
+*.nc
+Open-Field-Test/data/train/
+Open-Field-Test/data/raw/
+Open-Field-Test/data/processed/
+
+# Model weights and snapshots
+Open-Field-Test/model/best_model/*.pkl
+Open-Field-Test/model/best_model/snapshots/
+Open-Field-Test/model/best_model_backup/
+Open-Field-Test/model/best_model_pre_egocentric*/
+Open-Field-Test/model/model_losses/
+Open-Field-Test/model/pretrained_model/
+
+# Segmentation results (~20 GB of motif clips and npy files)
+Open-Field-Test/results/
+
+# Training logs
+Open-Field-Test/logs/
+
+# States folder (VAME internal)
+Open-Field-Test/states/
+
+# Old experimental VAME projects (contain raw .npy / result data)
+VameProjects/
+
+# Raw DLC group folders (contain .h5 / video files)
+P7-21*/
+P14-28*/
+P28-42*/
+
+# Numpy arrays anywhere outside tracked locations
+*.npy
+
+# Large interactive HTML outputs (not methodology)
+*.html
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.eggs/
+
+# VS Code
+.vscode/
+
+# Claude internal
+.claude/
