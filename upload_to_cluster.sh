@@ -12,9 +12,19 @@ echo "=============================="
 echo "Destination: $CLUSTER:$REMOTE_DIR"
 echo ""
 
-# Step 1 — Create remote folder and clone code from GitHub
-echo "[1/6] Setting up remote directory and cloning repo..."
-ssh $CLUSTER "mkdir -p $REMOTE_DIR && cd $REMOTE_DIR && git clone https://github.com/Zuriahn-Yun/kaplan-mouse-behavior-vame . 2>/dev/null || git pull"
+# Step 1 — Create remote folders and clone code from GitHub
+echo "[1/6] Setting up remote directories and cloning repo..."
+ssh $CLUSTER "
+  mkdir -p $REMOTE_DIR && \
+  cd $REMOTE_DIR && \
+  git clone https://github.com/Zuriahn-Yun/kaplan-mouse-behavior-vame . 2>/dev/null || git pull && \
+  mkdir -p $REMOTE_DIR/Open-Field-Test/data/raw \
+            $REMOTE_DIR/Open-Field-Test/data/processed \
+            $REMOTE_DIR/Open-Field-Test/data/train \
+            $REMOTE_DIR/Open-Field-Test/model \
+            $REMOTE_DIR/Open-Field-Test/results \
+            $REMOTE_DIR/Open-Field-Test/logs
+"
 echo "Done."
 echo ""
 
