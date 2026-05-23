@@ -1,5 +1,5 @@
 # Mouse Behavioral Segmentation — Project Overview
-**Kaplan Lab | Open Field Test | DeepLabCut → VAME 0.12.0**
+**Kaplan Lab | Open Field Test | [DeepLabCut](https://github.com/DeepLabCut/DeepLabCut) → [VAME 0.12.0](https://github.com/LINCellularNeuroscience/VAME)**
 
 ---
 
