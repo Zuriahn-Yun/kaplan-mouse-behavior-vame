@@ -1,0 +1,29 @@
+name: vame
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy<2.0
+  - scipy
+  - matplotlib
+  - pandas
+  - scikit-learn
+  - pyyaml
+  - tqdm
+  - h5py
+  - hdf5
+  - jupyter
+  - ipykernel
+  - seaborn
+  - pip:
+      - vame==0.12.0
+      - xarray
+      - netCDF4
+      - umap-learn
+      - optuna
+      - torch
+      - torchvision
